@@ -1,0 +1,31 @@
+{
+    "name": "@lumi-launcher/innosetup",
+    "description": "A small Node.js library written in TypeScript that provides a modern wrapper around the Inno Setup compiler (`ISCC.exe`).",
+    "version": "0.1.0",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "pnpm exec tsc -p tsconfig.json",
+        "format": "pnpm exec prettier . --write",
+        "prepack": "pnpm run build"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/lumi-launcher/innosetup.git"
+    },
+    "homepage": "https://github.com/lumi-launcher/innosetup",
+    "engines": {
+        "node": ">=18"
+    },
+    "type": "module",
+    "files": [
+        "dist",
+        "bin"
+    ],
+    "devDependencies": {
+        "@types/node": "^24.10.2",
+        "prettier": "^3.7.4",
+        "typescript": "^5.9.3"
+    }
+}
